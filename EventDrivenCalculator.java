@@ -1,6 +1,6 @@
-java
 import javax.swing.*;
 import java.awt.*;
+
 
 public class EventDrivenCalculator extends JFrame {
 
@@ -150,6 +150,7 @@ return btn;
 }
 
 public static void main(String[] args) {
+
 // ALWAYS start Swing applications on the EDT
 SwingUtilities.invokeLater(() -> {
 new EventDrivenCalculator().setVisible(true);
