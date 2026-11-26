@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.week6.LoginController" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;">
+   <children>
+      <VBox alignment="CENTER" spacing="15.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label text="Login" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+            <TextField fx:id="usernameField" promptText="Username" prefWidth="300.0" />
+            <PasswordField fx:id="passwordField" promptText="Password" prefWidth="300.0" />
+            <Button fx:id="loginButton" text="Login" onAction="#handleLoginButtonAction" prefWidth="300.0" style="-fx-background-color: #3b82f6; -fx-text-fill: white; -fx-font-weight: bold;" />
+            <Label text="Try: admin / password123" style="-fx-text-fill: #64748b; -fx-font-size: 12px;" />
+         </children>
+         <padding>
+            <Insets left="150.0" right="150.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
